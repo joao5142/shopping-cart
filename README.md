@@ -22,15 +22,14 @@
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
   <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white">
   <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white">
-  <img src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white">
-  <img src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white">
+   <img src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white">
   <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white">
  
 </div>
 
 <h2>🖼️ Demonstração da aplicação</h2>
-<img margin-bottom="20px" src="assets/readme1.PNG">
-<img margin-bottom="20px" src="assets/readme2.PNG">
+<img margin-bottom="20px" src="/public/assets/readme1.PNG">
+<img margin-bottom="20px" src="/public/assets/readme2.PNG">
 <h4  style="display: inline_block">Visualização do site :</h4><a style="display: inline_block" target="blank" href="https://acessibilidade-front-end.netlify.app/">Preview no Netlify</a>
 
 <h2>🧑🏻‍ Autor</h2>
