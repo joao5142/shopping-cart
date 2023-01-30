@@ -9,10 +9,9 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+  font-family: "Montserrat", sans-serif;
 }
 body {
-  font-family: "Montserrat", sans-serif;
-
   height: 100vh;
 
   @include mixins.setScrollColor(#c7c7c7);

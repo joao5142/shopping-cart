@@ -40,12 +40,16 @@ export default function Main() {
     let productAlreadyExists = cart.products.findIndex((p: IProduct) => p.id == product.id) != -1;
 
     if (!productAlreadyExists) {
-      openNotification("topLeft", "Product added to the cart", `The Product ${product?.name} was added to the cart!`);
+      openNotification(
+        "topLeft",
+        "Produto adicionado ao carinho",
+        `O produto ${product?.name} foi adicionado no carrinho!`
+      );
     } else {
       openNotification(
         "topLeft",
-        "Product already added to the cart!",
-        `The Product ${product?.name} has already been added to the cart!`
+        "Produto já adicionado no carrinho!",
+        `O produto ${product?.name} já foi adicionado no seu carrinho!`
       );
     }
   };
@@ -82,7 +86,7 @@ export default function Main() {
       </div>
 
       <div title="Pagination" aria-label="Pagination">
-        <Pagination defaultCurrent={1} total={50} />
+        <Pagination defaultCurrent={1} total={8} />
       </div>
     </main>
   );

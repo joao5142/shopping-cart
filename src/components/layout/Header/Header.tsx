@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/store";
 
 export default function Header() {
-  const [drawerOpen, setDrawerOpen] = useContext(AppContext);
+  const [_, setDrawerOpen] = useContext(AppContext);
   const cart = useSelector((state: RootState) => state.cart);
 
   const handleClickCart = () => {

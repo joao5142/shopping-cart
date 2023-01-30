@@ -43,7 +43,7 @@ const cart = createSlice({
       if (product) {
         product.quantity++;
       }
-      console.log(current(state));
+
       setTotalPrice(state);
     },
 
@@ -53,7 +53,7 @@ const cart = createSlice({
       if (product && product.quantity > 1) {
         product.quantity--;
       }
-      console.log(current(state));
+
       setTotalPrice(state);
     },
 

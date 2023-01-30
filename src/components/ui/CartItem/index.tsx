@@ -14,13 +14,15 @@ type Props = {
 
 const config = (product: IProduct, dispatch: Dispatch<AnyAction>) => {
   return {
-    title: `Delete ${product.name}`,
+    title: `Deletar ${product.name}`,
     content: (
       <>
-        <div>Do you want delete this product ?</div>
+        <div>Quer remover o produto selecionado ?</div>
       </>
     ),
-    onOk: () => dispatch(removeProductInCart(product.id)),
+    onOk: () => {
+      dispatch(removeProductInCart(product.id));
+    },
   };
 };
 export default function CartItem({ product }: Props) {
