@@ -4,7 +4,7 @@ import CartItem from "../CartItem";
 import IProduct from "@/types/Product";
 
 import { useSelector } from "react-redux";
-import store from "@/store";
+import store, { RootState } from "@/store";
 
 import styles from "./NavigationDrawer.module.scss";
 
@@ -14,7 +14,7 @@ type Props = {
 };
 
 export default function NavigationDrawer({ onCloseDrawer, drawerIsOpen }: Props) {
-  const cart = useSelector((state) => state.cart);
+  const cart = useSelector((state: RootState) => state.cart);
 
   return (
     <Drawer width={550} closable={false} onClose={onCloseDrawer} open={drawerIsOpen}>

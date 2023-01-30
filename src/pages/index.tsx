@@ -3,7 +3,7 @@ import Main from "@/components/layout/Main/Main";
 import Footer from "@/components/layout/Main/Main";
 import { Drawer } from "antd";
 
-import { Dispatch, useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import AppContext from "@/context/AppContext";
 
 import { Provider } from "react-redux";

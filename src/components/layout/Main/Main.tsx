@@ -13,14 +13,14 @@ import Loading from "@/components/ui/Loading";
 
 import { useDispatch, useSelector } from "react-redux";
 import { addProductToCart } from "@/store/Cart.store";
+import { RootState } from "@/store";
 
 export default function Main() {
   const [products, setProducts] = useState<Array<IProduct>>([]);
-  const [selectedProduct, setSelectedProduct] = useState<IProduct>();
   const [isLoading, setIsLoading] = useState(false);
-  const cart = useSelector((state) => state.cart);
 
   const [api, contextHolder] = notification.useNotification();
+  const cart = useSelector((state: RootState) => state.cart);
 
   const dispatch = useDispatch();
 
@@ -28,7 +28,7 @@ export default function Main() {
     getProducts();
   }, []);
 
-  const openNotification = (placement: NotificationPlacement, message: string, description) => {
+  const openNotification = (placement: NotificationPlacement, message: string, description: string) => {
     api.info({
       message,
       description,

@@ -5,10 +5,11 @@ import { useContext } from "react";
 import AppContext from "@/context/AppContext";
 
 import { useSelector } from "react-redux";
+import { RootState } from "@/store";
 
 export default function Header() {
   const [drawerOpen, setDrawerOpen] = useContext(AppContext);
-  const cart = useSelector((state) => state.cart);
+  const cart = useSelector((state: RootState) => state.cart);
 
   const handleClickCart = () => {
     setDrawerOpen(true);
