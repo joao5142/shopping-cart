@@ -1,0 +1,57 @@
+@use "@/styles/_variables" as variables;
+
+.header {
+  background: variables.$blue-200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 30px;
+  gap: 20px;
+
+  &__title {
+    font-size: 3rem;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+  }
+  &__title--small {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+
+  &__cart-button {
+    background: #ffffff;
+    padding: 4px 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    border-radius: 8px;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  &__cart-icon {
+    color: black;
+    background: transparent;
+    font-size: 2rem;
+  }
+
+  @media (min-width: 450px) {
+    & {
+      padding: 10px 55px;
+      gap: 0px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@use "./_mixins" as mixins;
+@use "./_variables" as variables;
+@import "./_utils";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+/*##RESET*/
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+
+  height: 100vh;
+
+  @include mixins.setScrollColor(#c7c7c7);
+}
+#__next {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 50px;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+button,
+input,
+textarea {
+  border: 0;
+  outline: none;
+}
+button {
+  background: transparent;
+}
+button:focus,
+input:focus,
+textarea:focus {
+  border: 0;
+  outline: none;
+}

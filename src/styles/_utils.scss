@@ -1,0 +1,51 @@
+//DISPLAY
+.d-flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-end {
+  align-items: flex-end;
+}
+
+$sizes: 5 10 15 20 25;
+
+@each $size in $sizes {
+  .gap-#{$size} {
+    gap: #{$size}px;
+  }
+
+  .my-#{$size} {
+    margin-top: #{$size}px;
+    margin-bottom: #{$size}px;
+  }
+  .mt-#{$size} {
+    margin-top: #{$size}px;
+  }
+  .mb-#{$size} {
+    margin-bottom: #{$size}px;
+  }
+
+  .mx-#{$size} {
+    margin-left: #{$size}px;
+    margin-right: #{$size}px;
+  }
+  .ms-#{$size} {
+    margin-left: #{$size}px;
+  }
+  .me-#{$size} {
+    margin-right: #{$size}px;
+  }
+}

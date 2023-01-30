@@ -1,0 +1,91 @@
+.card {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-width: 200px;
+  max-width: 350px;
+  flex-basis: 300px;
+
+  flex-shrink: 1;
+
+  & img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+  }
+
+  img {
+    width: 100%;
+    max-height: 150px;
+
+    object-fit: contain;
+
+    z-index: -1;
+
+    cursor: pointer;
+  }
+
+  &__content {
+    padding: 14px;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    word-break: break-all;
+  }
+  &__price-button {
+    border-radius: 7px;
+
+    padding: 6px 4px;
+    background-color: #373737;
+
+    color: white;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 0.9rem;
+
+    color: #2c2c2c;
+  }
+
+  &__submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 100%;
+
+    padding: 5px;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: white;
+
+    background-color: #317beb;
+
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+
+    cursor: pointer;
+
+    &:active {
+      transform: scale(0.99);
+    }
+  }
+
+  &__cart-icon {
+    font-size: 1.5rem;
+  }
+}

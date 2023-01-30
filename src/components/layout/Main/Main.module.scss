@@ -1,0 +1,28 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 0px;
+
+  &__content {
+    height: auto;
+    width: 70%;
+
+    gap: 2%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__content > * {
+    margin-bottom: 40px;
+    width: 23%;
+  }
+
+  @media (min-width: 450px) {
+    & {
+      padding: 100px 0px;
+    }
+  }
+}
