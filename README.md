@@ -32,7 +32,7 @@
 <img margin-bottom="20px" src="/public/assets/readme1.PNG">
 <img margin-bottom="20px" src="/public/assets/readme2.PNG">
 <img margin-bottom="20px" src="/public/assets/readme3.PNG">
-<h4  style="display: inline_block">Visualização do site :</h4><a style="display: inline_block" target="blank" href="https://acessibilidade-front-end.netlify.app/">Preview no Netlify</a>
+<h4  style="display: inline_block">Visualização do site :</h4><a style="display: inline_block" target="blank" href="https://shopping-cart-2zz07211b-joao5142.vercel.app/">Preview na Vercel</a>
 
 <h2>🧑🏻‍ Autor</h2>
 <p>Feito por João paulo</p>
