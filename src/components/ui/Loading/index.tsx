@@ -4,7 +4,7 @@ import styles from "./Loading.module.scss";
 export default function Loading() {
   return (
     <div className={styles.loading}>
-      <Spin size="large" />
+      <Spin data-testid="loading" size="large" />
     </div>
   );
 }

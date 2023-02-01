@@ -47,10 +47,11 @@ export default function NavigationDrawer({ onCloseDrawer, drawerIsOpen }: Props)
             </div>
           )}
         </div>
-        <div className={styles["drawer__price"]}>
+        <div data-testid="drawer-price" className={styles["drawer__price"]}>
           <h3>Total</h3> <span>R${cart.totalPrice}</span>
         </div>
         <div
+          data-testid="drawer-button-checkout"
           role="button"
           className={classNames(styles["drawer__checkout"], {
             [styles["drawer__checkout--disabled"]]: cart.products.length == 0,

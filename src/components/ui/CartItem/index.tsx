@@ -31,12 +31,21 @@ export default function CartItem({ product }: Props) {
 
   return (
     <div className={styles["item"]}>
-      <img className={styles["item__image"]} src={product.photo} alt="Cart Item" title={product.description} />
-      <h3 className={styles["item__name"]}>{product.name}</h3>
+      <img
+        data-testid="item-image"
+        className={styles["item__image"]}
+        src={product.photo}
+        alt="Cart Item"
+        title={product.description}
+      />
+      <h3 data-testid="item-name" className={styles["item__name"]}>
+        {product.name}
+      </h3>
       <div
         className={styles["item__buttons"]}
         title="Increase,Decrease Buttons Container"
         aria-label="Increase,Decrease Buttons Container"
+        data-testid="item-actions"
       >
         <div onClick={() => dispatch(decreaseCountProductInCart(product.id))} role="button">
           -
@@ -46,8 +55,11 @@ export default function CartItem({ product }: Props) {
           +
         </div>
       </div>
-      <h4 className={styles["item__price"]}>R${product.price}</h4>
+      <h4 data-testid="item-price" className={styles["item__price"]}>
+        R${product.price}
+      </h4>
       <DeleteOutlined
+        data-testid="item-delete-icon"
         onClick={() => modal.confirm(config(product, dispatch))}
         role="button"
         title="Delete Product in Cart"
