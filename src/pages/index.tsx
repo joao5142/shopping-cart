@@ -1,9 +1,7 @@
-import Header from "@/components/layout/Header/Header";
-import Main from "@/components/layout/Main/Main";
-import Footer from "@/components/layout/Main/Main";
-import { Drawer } from "antd";
+import Header from "@/components/layout/Header";
+import Main from "@/components/layout/Main";
 
-import { Dispatch, SetStateAction, useState } from "react";
+import { useState } from "react";
 import AppContext from "@/context/AppContext";
 
 import { Provider } from "react-redux";

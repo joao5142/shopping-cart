@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch"
+    "test": "jest --watch --detectOpenHandles"
   },
   "dependencies": {
     "@ant-design/icons": "^5.0.1",

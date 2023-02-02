@@ -1,6 +1,7 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import NavigationDrawer from "./index";
+
+import Main from "./index";
 
 import { Provider } from "react-redux";
 import store from "@/store/index";
@@ -19,15 +20,14 @@ Object.defineProperty(window, "matchMedia", {
   })),
 });
 
-describe("Testing Navigation drawer Component", () => {
-  it("should render Navigation Drawer Component correctly", () => {
-    render(
-      <Provider store={store}>
-        <NavigationDrawer onCloseDrawer={() => {}} drawerIsOpen={true} />
-      </Provider>
-    );
-
-    expect(screen.getByTestId("drawer-price")).toBeInTheDocument();
-    expect(screen.getByTestId("drawer-button-checkout")).toBeInTheDocument();
+describe("Testing Main Component", () => {
+  render(
+    <Provider store={store}>
+      <Main />
+    </Provider>
+  );
+  it("should render Main Component correctly", () => {
+    expect(screen.getByTestId("container-products")).toBeInTheDocument();
+    expect(screen.getByTestId("pagination")).toBeInTheDocument();
   });
 });

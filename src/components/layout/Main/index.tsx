@@ -39,19 +39,12 @@ export default function Main() {
   const handleClickCard = (product: IProduct) => {
     let productAlreadyExists = cart.products.findIndex((p: IProduct) => p.id == product.id) != -1;
 
-    if (!productAlreadyExists) {
-      openNotification(
-        "topLeft",
-        "Produto adicionado ao carinho",
-        `O produto ${product?.name} foi adicionado no carrinho!`
-      );
-    } else {
-      openNotification(
-        "topLeft",
-        "Produto já adicionado no carrinho!",
-        `O produto ${product?.name} já foi adicionado no seu carrinho!`
-      );
-    }
+    let message = productAlreadyExists ? "Produto já adicionado no carrinho!" : "Produto adicionado no carrinho!";
+    let description = productAlreadyExists
+      ? `O produto ${product?.name} já foi adicionado no seu carrinho!`
+      : `O produto ${product?.name} foi adicionado no seu carrinho!`;
+
+    openNotification("topLeft", message, description);
   };
 
   const getProducts = async () => {
@@ -70,7 +63,7 @@ export default function Main() {
 
       {isLoading && <Loading />}
 
-      <div className={styles["main__content"]}>
+      <div data-testid="container-products" className={styles["main__content"]}>
         {products.map((product: IProduct, index) => {
           return (
             <Card
@@ -85,7 +78,7 @@ export default function Main() {
         })}
       </div>
 
-      <div title="Pagination" aria-label="Pagination">
+      <div data-testid="pagination" title="Pagination" aria-label="Pagination">
         <Pagination defaultCurrent={1} total={8} />
       </div>
     </main>

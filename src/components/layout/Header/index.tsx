@@ -16,10 +16,11 @@ export default function Header() {
   };
   return (
     <header className={styles.header}>
-      <h1 className={styles["header__title"]}>
+      <h1 data-testid="logo" className={styles["header__title"]}>
         MKS <span className={styles["header__title--small"]}>Sistemas</span>
       </h1>
       <button
+        data-testid="cart-button"
         onClick={handleClickCart}
         className={styles["header__cart-button"]}
         aria-label="Shopping Cart"
