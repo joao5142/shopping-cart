@@ -2,18 +2,18 @@
 <h4>🚀 Funcionalidades de um carrinho de compras desenvolvida com NextJs.</h4>
 
 <h2>🚧 Status do projeto</h2>
-<p>Em andamento</p>
+<p>Finalizado</p>
 
 <h2>🖥️ Pré-requisitos e como rodar a aplicação/testes</h2>
 <p>Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com) </p>
+[Git](https://git-scm.com).</p>
 <h3>Rodando a Aplicação</h3>
 <ul>
-	<li>Clone esse repositório(git clone)</li>
+	<li>Clone esse repositório(git clone).</li>
 	<li>Rodar o comando npm install ou yarn , para baixar os pacotes da aplicação.</li>
 	<li>Rodar o comando npm run dev ou yarn dev , para subir a aplicação em modo de desenvolvimento.</li>
 </ul>
-<h3>Rodando os testes dos componentes</h3>
+<h3>Rodando os Testes dos Componentes</h3>
 <p>Para realizar os testes dos componentes é necessário rodar o comando npm run test ou yarn test.</p>
 <h2>🤖 Tecnologias Utilizadas</h2>
 <div style="display: inline_block">
