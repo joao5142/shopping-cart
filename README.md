@@ -13,8 +13,8 @@
 	<li>Rodar o comando npm install ou yarn , para baixar os pacotes da aplicação.</li>
 	<li>Rodar o comando npm run dev ou yarn dev , para subir a aplicação em modo de desenvolvimento.</li>
 </ul>
-<h3>Rodando os testes dos componentes é necessário rodar o comando npm run test ou yarn test.</h3>
-<p>Para realizar os testes dos componentes</p>
+<h3>Rodando os testes dos componentes</h3>
+<p>Para realizar os testes dos componentes é necessário rodar o comando npm run test ou yarn test.</p>
 <h2>🤖 Tecnologias Utilizadas</h2>
 <div style="display: inline_block">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
